@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="new-test-suite.xml" />
+	<munit:test name="new-test-suiteTest" doc:id="ee782a9f-dbf8-45fb-8eb0-e4479ca5a804" >
+		<munit:execution >
+			<munit:set-event doc:name="Set Event" doc:id="38d2db96-2d98-4cd0-b739-323efb304e1d" >
+				<munit:attributes value='#[output application/json&#10;---&#10;{&#10;	"queryParams": {&#10;		"fullName": "Pavan"&#10;	}&#10;}]' />
+			</munit:set-event>
+			<flow-ref doc:name="goodbyeFlow" doc:id="2879dcef-d7c4-452b-8246-dc6fdf4cf510" name="goodbyeFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="48188b43-523c-4e32-88ef-b6c98b57633d" actual="#[payload]" expected='#["GOODBYE Pavan"]'/>
+		</munit:validation>
+	</munit:test>
+
+
+</mule>
