@@ -31,7 +31,7 @@
 				<version>4.3.0</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHubDeployment>
+					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${mule.version}</muleVersion>
 						<username>${mule.username}</username>
@@ -42,7 +42,7 @@
 						<workerType>${vCore}</workerType>
 						<workers>${worker}</workers>
 						<objectStoreV2>true</objectStoreV2>
-					</cloudHubDeployment>
+					</cloudhub2Deployment>
 					<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
