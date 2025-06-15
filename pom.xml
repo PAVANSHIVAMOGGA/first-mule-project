@@ -36,6 +36,7 @@
 					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${mule.version}</muleVersion>
+						<provider>MC</provider>
 						<username>${mule.username}</username>
 						<password>${mule.password}</password>
 						<applicationName>${cloudhub.application.name}</applicationName>
