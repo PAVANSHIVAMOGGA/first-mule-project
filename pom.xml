@@ -43,7 +43,7 @@
 						<businessGroup>${business}</businessGroup>
 						<replicas>1</replicas>
 						<vCores>1</vCores>
-						
+						<target>${target}</target>
 					</cloudhub2Deployment>
 					<classifier>mule-application</classifier>
 				</configuration>
