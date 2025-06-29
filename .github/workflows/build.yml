@@ -37,4 +37,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=PAVANSHIVAMOGGA_first-mule-project_72883286-efd6-45de-aac4-90ee612b6efb -Dsonar.projectName='first-mule-project'
+        run: mvn clean -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=PAVANSHIVAMOGGA_first-mule-project_72883286-efd6-45de-aac4-90ee612b6efb -Dsonar.projectName='first-mule-project'
