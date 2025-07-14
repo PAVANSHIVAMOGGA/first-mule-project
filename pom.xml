@@ -129,7 +129,7 @@
 
 	<distributionManagement>
 		<repository>
-			<id>Repository</id>
+			<id>anypoint-exchange-v3</id>
 			<name>Anypoint Exchange</name>
 			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/c9caaf32-3cbb-4140-b5bc-59a7a591fb07/maven</url>
 			<layout>default</layout>
