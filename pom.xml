@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mycompany</groupId>
-	<artifactId>firstproject</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<groupId>4dd5ca52-ceb4-496c-ae63-a93e2f98d1a0</groupId>
+	<artifactId>first-mule-project</artifactId>
+	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
 	<name>first-mule-project</name>
@@ -13,7 +15,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.8.0</app.runtime>
+		<app.runtime>4.9.0</app.runtime>
 		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
 		<munit.version>3.3.0</munit.version>
 		<build.number>1</build.number>
@@ -31,12 +33,28 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>4.3.0</version>
 				<extensions>true</extensions>
-				
+				<configuration>
+					<cloudhub2Deployment>
+						<server>anypoint</server>
+						<applicationName>first-mule-project</applicationName>
+						<environment>Sandbox</environment>
+						<target>Cloudhub-US-East-1</target>
+						<muleVersion>4.9.0</muleVersion>
+						<replicas>1</replicas>
+						<vCores>0.1</vCores>
+					</cloudhub2Deployment>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.sonarsource.scanner.maven</groupId>
 				<artifactId>sonar-maven-plugin</artifactId>
 				<version>5.1.0.4751</version>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>4.0.0.4121</version>
+
 			</plugin>
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
@@ -105,12 +123,6 @@
 	</dependencies>
 
 	<repositories>
-		<repository>
-			<id>anypoint-exchange-v2</id>
-			<name>Anypoint Exchange</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
-			<layout>default</layout>
-		</repository>
 		<repository>
 			<id>mulesoft-releases</id>
 			<name>MuleSoft Releases Repository</name>
