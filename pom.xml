@@ -140,16 +140,14 @@
 	</repositories>
 
 	<pluginRepositories>
-		<pluginRepository>
-			<id>mulesoft-releases</id>
-			<name>MuleSoft Releases Repository</name>
-			<layout>default</layout>
-			<url>https://repository.mulesoft.org/releases/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</pluginRepository>
+	  <pluginRepository>
+	    <id>anypoint-exchange-v3</id>
+	    <name>Anypoint Exchange Plugin Repo</name>
+	    <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/c9caaf32-3cbb-4140-b5bc-59a7a591fb07/maven</url>
+	    <layout>default</layout>
+	  </pluginRepository>
 	</pluginRepositories>
+
 
 	<distributionManagement>
 		<repository>
