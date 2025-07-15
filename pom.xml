@@ -46,17 +46,6 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.sonarsource.scanner.maven</groupId>
-				<artifactId>sonar-maven-plugin</artifactId>
-				<version>5.1.0.4751</version>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>sonar-maven-plugin</artifactId>
-				<version>4.0.0.4121</version>
-
-			</plugin>
-			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
 				<artifactId>munit-maven-plugin</artifactId>
 				<version>${munit.version}</version>
@@ -79,6 +68,23 @@
 					</coverage>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>com.mulesoft.exchange</groupId>
+				<artifactId>exchange-mule-maven-plugin</artifactId>
+				<version>1.0.0</version>
+				<configuration>
+					<clientId>${anypoint.client_id}</clientId>
+					<clientSecret>${anypoint.client_secret}</clientSecret>
+					<assetId>first-mule-project-test</assetId>
+					<organizationId>4dd5ca52-ceb4-496c-ae63-a93e2f98d1a0</organizationId>
+					<version>1.0.1</version> <!-- increment if 1.0.0 already exists -->
+					<type>raml</type>
+					<mainFile>src/main/resources/api/first-mule-project-test.raml</mainFile>
+					<name>first-mule-project-test</name>
+					<groupId>4dd5ca52-ceb4-496c-ae63-a93e2f98d1a0</groupId>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 
@@ -119,6 +125,12 @@
 			<groupId>org.sonarsource.scanner.maven</groupId>
 			<artifactId>sonar-maven-plugin</artifactId>
 			<version>5.1.0.4751</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.modules</groupId>
+			<artifactId>mule-apikit-module</artifactId>
+			<version>1.11.3</version>
+			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
 
