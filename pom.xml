@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>c9caaf32-3cbb-4140-b5bc-59a7a591fb07</groupId>
-	<artifactId>first-mule-project</artifactId>
+	<artifactId>first-mule-project-test</artifactId>
 	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
