@@ -72,7 +72,7 @@
 			<plugin>
 				<groupId>com.mulesoft.exchange</groupId>
 				<artifactId>exchange-mule-maven-plugin</artifactId>
-				<version>0.0.15</version>
+				<version>0.0.17</version>
 				<configuration>
 					<clientId>${anypoint.client_id}</clientId>
 					<clientSecret>${anypoint.client_secret}</clientSecret>
