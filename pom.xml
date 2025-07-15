@@ -4,8 +4,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>4dd5ca52-ceb4-496c-ae63-a93e2f98d1a0</groupId>
-	<artifactId>first-mule-project</artifactId>
+	<groupId>c9caaf32-3cbb-4140-b5bc-59a7a591fb07</groupId>
+	<artifactId>first-mule-project-test</artifactId>
 	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
@@ -45,6 +45,7 @@
 					</cloudhub2Deployment>
 				</configuration>
 			</plugin>
+
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
 				<artifactId>munit-maven-plugin</artifactId>
@@ -112,7 +113,7 @@
 		<dependency>
 			<groupId>org.mule.weave</groupId>
 			<artifactId>assertions</artifactId>
-			<version>1.2.1</version>
+			<version>1.0.2</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -122,31 +123,20 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
-			<groupId>org.sonarsource.scanner.maven</groupId>
-			<artifactId>sonar-maven-plugin</artifactId>
-			<version>5.1.0.4751</version>
-		</dependency>
-		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-apikit-module</artifactId>
 			<version>1.11.3</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
+
 	</dependencies>
 
 	<repositories>
-		<repository>
-			<id>mulesoft-releases</id>
-			<name>MuleSoft Releases Repository</name>
-			<url>https://repository.mulesoft.org/releases/</url>
-			<layout>default</layout>
-		</repository>
-		<repository>
-			<id>anypoint-exchange-v3</id>
-			<name>Anypoint Exchange V3</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
-			<layout>default</layout>
-		</repository>
+	  <repository>
+		  <id>anypoint-exchange-v3</id>
+		  <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/c9caaf32-3cbb-4140-b5bc-59a7a591fb07/maven</url>
+	</repository>
+
 	</repositories>
 
 	<pluginRepositories>
@@ -160,5 +150,14 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+
+	<distributionManagement>
+		<repository>
+			<id>anypoint-exchange-v3</id>
+			<name>Anypoint Exchange</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/c9caaf32-3cbb-4140-b5bc-59a7a591fb07/maven</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
 
 </project>
