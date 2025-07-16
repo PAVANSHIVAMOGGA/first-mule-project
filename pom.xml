@@ -77,7 +77,7 @@
 					<clientId>${anypoint.client_id}</clientId>
 					<clientSecret>${anypoint.client_secret}</clientSecret>
 					<assetId>first-mule-project-test</assetId>
-					<organizationId>4dd5ca52-ceb4-496c-ae63-a93e2f98d1a0</organizationId>
+					<organizationId>c9caaf32-3cbb-4140-b5bc-59a7a591fb07</organizationId>
 					<version>1.0.1</version> <!-- increment if 1.0.0 already exists -->
 					<type>raml</type>
 					<mainFile>src/main/resources/api/first-mule-project-test.raml</mainFile>
