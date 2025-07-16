@@ -40,7 +40,7 @@
 						<provider>MC</provider>
 						<applicationName>first-mule-project-test</applicationName>
 						<environment>Sandbox</environment>
-						<target>Cloudhub-US-East-1</target>
+						<target>Cloudhub-US-East-2</target>
 						<muleVersion>4.9.0</muleVersion>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
