@@ -35,13 +35,16 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudhub2Deployment>
+						<uri>https://anypoint.mulesoft.com</uri>
 						<server>anypoint</server>
-						<applicationName>first-mule-project</applicationName>
+						<provider>MC</provider>
+						<applicationName>first-mule-project-test</applicationName>
 						<environment>Sandbox</environment>
 						<target>Cloudhub-US-East-1</target>
 						<muleVersion>4.9.0</muleVersion>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
+						<businessGroup>Infosys</businessGroup>
 					</cloudhub2Deployment>
 				</configuration>
 			</plugin>
