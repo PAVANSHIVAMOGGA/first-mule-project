@@ -45,6 +45,9 @@
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
 						<businessGroup>Infosys</businessGroup>
+						<groupId>c9caaf32-3cbb-4140-b5bc-59a7a591fb07</groupId>
+						<artifactId>first-mule-project-test</artifactId>
+						<version>1.0.0</version>
 					</cloudhub2Deployment>
 				</configuration>
 			</plugin>
