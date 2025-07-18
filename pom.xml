@@ -36,7 +36,7 @@
 				<configuration>
 					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<server>nypoint-exchange-v3</server>
+						<server>anypoint-exchange-v3</server>
 						<provider>MC</provider>
 						<applicationName>first-mule-project-test</applicationName>
 						<environment>Sandbox</environment>
