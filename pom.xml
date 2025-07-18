@@ -121,17 +121,24 @@
 
 	</dependencies>
 
-	<repositories>
-	  <repository>
-		  <id>PrivateExchangeRepository</id>
-		  <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/c9caaf32-3cbb-4140-b5bc-59a7a591fb07/maven</url>
-	</repository>
-
+<repositories>
+		<repository>
+			<id>anypoint-exchange-v3</id>
+			<name>Anypoint Exchange</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+			<layout>default</layout>
+		</repository>
+		<repository>
+			<id>mulesoft-releases</id>
+			<name>MuleSoft Releases Repository</name>
+			<url>https://repository.mulesoft.org/releases/</url>
+			<layout>default</layout>
+		</repository>
 	</repositories>
 
 	<pluginRepositories>
 	  <pluginRepository>
-	    <id>PrivateExchangeRepository</id>
+	    <id>anypoint-exchange-v3</id>
 	    <name>Anypoint Exchange Plugin Repo</name>
 	    <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/c9caaf32-3cbb-4140-b5bc-59a7a591fb07/maven</url>
 	    <layout>default</layout>
@@ -142,7 +149,7 @@
 
 	<distributionManagement>
 		<repository>
-			<id>PrivateExchangeRepository</id>
+			<id>anypoint-exchange-v3</id>
 			<name>Anypoint Exchange</name>
 			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/c9caaf32-3cbb-4140-b5bc-59a7a591fb07/maven</url>
 			<layout>default</layout>
